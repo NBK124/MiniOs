@@ -169,7 +169,7 @@ def jackal():
 	input(READY)
 	clear()
 	try:
-		im = Image.open("system/before.png")
+		im = Image.open("before.png")
 	except: 
 		input(colorama.Fore.RED + jackal_ERROR + colorama.Style.RESET_ALL)
 		clear()
@@ -188,7 +188,7 @@ def jackal():
 	width //= cach
 	height //= cach
 	new = im.resize((width, height))
-	new.save("system/after.png")
+	new.save("after.png")
 	input(colorama.Fore.GREEN + READY + colorama.Style.RESET_ALL)
 	clear()
 	main(ch)
